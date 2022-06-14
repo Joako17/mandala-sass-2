@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap");
+/* mapa inicio */
+/* fuentes */
+/* extend */
+.par, section {
+  color: blue;
+  text-transform: capitalize;
+}
+
+/*  */
+/* mixin */
+/*  */
+header .navbar {
+  font-size: 30px;
+  font-family: Arial;
+  text-decoration: underline;
+}
+header .navbar-dark {
+  background-color: seagreen;
+}
+
+section {
+  height: 550px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+section .jumbotron {
+  height: 40%;
+}
+section .jumbotron p {
+  text-align: right;
+  font-size: 30px;
+  font-family: "Kdam Thmor Pro";
+}
+
+/* footer inicio */
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: seagreen;
+}
+footer h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Dancing Script";
+  text-decoration: underline;
+}
+footer .redes {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* footer fin */
+/* contacto wasap */
+.wasap {
+  height: 60px;
+  width: 50px;
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  text-align: center;
+  line-height: 3px;
+  font-size: 30px;
+  border-radius: 50%;
+  color: rgb(35, 155, 11);
+}
+
+/*# sourceMappingURL=estilos.css.map */

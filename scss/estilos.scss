@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=IBM+Plex+Serif&family=Kdam+Thmor+Pro&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap');
+
+
+/* mapa inicio */
+
+$colores: (
+    color1: seagreen,
+    color2: rgb(35, 155, 11),
+);
+
+/* fuentes */
+
+$fuentes: (
+    fuente1: Arial,
+    fuente2: 'Kdam Thmor Pro',
+    fuente3: 'Dancing Script', 
+);
+
+/* extend */
+.par{
+    color: blue;
+    text-transform: capitalize;
+}
+/*  */
+
+/* mixin */
+@mixin subr {
+    text-decoration: underline;
+}
+/*  */
+
+header {
+    .navbar {
+        font-size: 30px;
+        font-family: map-get($fuentes , fuente1);
+        @include subr;
+
+    }
+
+    .navbar-dark {
+        background-color: map-get($colores , color1)
+    }
+}
+
+section {
+    height: 550px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    @extend .par;
+
+    .jumbotron {
+        height: 40%;
+
+        p {
+            text-align: right;
+            font-size: 30px;
+            font-family: map-get($fuentes , fuente2);
+        }
+    }
+
+}
+
+/* footer inicio */
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: map-get($colores , color1);
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        font-family: map-get($fuentes , fuente3);
+        @include subr;
+    }
+
+    .redes {
+        
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+
+/* footer fin */
+
+/* contacto wasap */
+
+.wasap {
+    height: 60px;
+    width: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    text-align: center;
+    line-height: 3px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: map-get($colores , color2);
+}
